@@ -2,13 +2,7 @@
   <div>
     <v-app-bar color="#FDD10A" dense dark>
       <v-app-bar-nav-icon @click.stop="drawer = !drawer"></v-app-bar-nav-icon>
-      <v-img
-        class="brand-img"
-        src="../assets/acnh-logo.png"
-        max-height="60"
-        max-width="60"
-        contain
-      ></v-img>
+      <v-img class="brand-img" src="../assets/acnh-logo.png" contain></v-img>
       <v-spacer></v-spacer>
     </v-app-bar>
     <v-navigation-drawer v-model="drawer" absolute bottom temporary>
@@ -24,6 +18,7 @@
           </v-list-item-content>
         </v-list-item>
       </v-list>
+      <v-img class="brand-img" src="../assets/acnh-logo.png" contain></v-img>
     </v-navigation-drawer>
   </div>
 </template>
@@ -48,3 +43,9 @@ export default {
   },
 };
 </script>
+
+<style lang="scss" scoped>
+.v-image {
+  max-height: 100%;
+}
+</style>

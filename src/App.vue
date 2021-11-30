@@ -4,11 +4,13 @@
     <v-main>
       <router-view />
     </v-main>
+    <bottom-bar />
   </v-app>
 </template>
 
 <script>
 import NavBar from "./components/NavBar.vue";
+import BottomBar from "./components/BottomBar.vue";
 
 export default {
   name: "App",
@@ -18,6 +20,7 @@ export default {
   }),
   components: {
     NavBar,
+    BottomBar,
   },
 };
 </script>
