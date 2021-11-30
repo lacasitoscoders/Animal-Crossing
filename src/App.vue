@@ -24,3 +24,11 @@ export default {
   },
 };
 </script>
+
+<style lang="scss">
+@import url("https://fonts.googleapis.com/css?family=Questrial");
+
+.application {
+  font-family: "Bree Serif";
+}
+</style>

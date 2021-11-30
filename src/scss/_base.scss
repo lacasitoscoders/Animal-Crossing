@@ -1,1 +1,11 @@
 $first-color: #FDD10A;
+$second-color: #4BBC4B;
+
+$acnh-font: 'Bree Serif', serif;
+
+body, .v-application {
+    [class*='text-'] {
+        font-family: $acnh-font !important;
+      }
+      font-family: $acnh-font !important;
+}

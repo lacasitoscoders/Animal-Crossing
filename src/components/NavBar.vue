@@ -1,6 +1,6 @@
 <template>
   <div>
-    <v-app-bar color="#FDD10A" dense dark>
+    <v-app-bar color="#FDD10A" dark>
       <v-app-bar-nav-icon @click.stop="drawer = !drawer"></v-app-bar-nav-icon>
       <v-img class="brand-img" src="../assets/acnh-logo.png" contain></v-img>
       <v-spacer></v-spacer>
@@ -43,9 +43,3 @@ export default {
   },
 };
 </script>
-
-<style lang="scss" scoped>
-.v-image {
-  max-height: 100%;
-}
-</style>
