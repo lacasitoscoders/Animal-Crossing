@@ -1,15 +1,25 @@
 <template>
-  <hello-world />
+  <card-section :animalList="animalList"></card-section>
 </template>
 
 <script>
-import HelloWorld from "../components/HelloWorld";
+import CardSection from "../components/CardSection.vue";
+import ApiRepository from "../api/infrastructure/ApiRepository";
 
 export default {
   name: "Home",
-
+  data: () => ({
+    animalList: [],
+  }),
   components: {
-    HelloWorld,
+    CardSection,
+  },
+  methods: {},
+  created: async function () {
+    const url = "https://acnhapi.com/v1/villagers/";
+    const api = await new ApiRepository(url);
+    this.animalList = await api.getAllData();
+    console.log(this.animalList);
   },
 };
 </script>
