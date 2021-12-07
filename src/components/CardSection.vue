@@ -1,41 +1,34 @@
 <template>
-  <!-- <v-card
-    class="mx-auto"
-    max-width="500"
-   -->
   <v-container fluid>
-    <v-row dense>
-      <v-col v-for="card in cards" :key="card.title" :cols="card.flex">
-        <v-card>
+    <v-row>
+      <v-col
+        v-for="card in cards"
+        :key="card.title"
+        cols="6"
+        sm="5"
+        md="3"
+        lg="2"
+      >
+        <v-card min-height="130px">
           <v-img
             :src="card.src"
             class="white--text align-end"
             gradient="to bottom, rgba(0,0,0,.1), rgba(0,0,0,.5)"
-            height="200px"
+            height="130px"
+            position="top center"
           >
-            <v-card-title v-text="card.title"></v-card-title>
+            <v-card-actions>
+              <v-btn icon>
+                <v-icon>mdi-heart</v-icon>
+              </v-btn>
+            </v-card-actions>
           </v-img>
-
-          <v-card-actions>
-            <v-spacer></v-spacer>
-
-            <v-btn icon>
-              <v-icon>mdi-heart</v-icon>
-            </v-btn>
-
-            <v-btn icon>
-              <v-icon>mdi-bookmark</v-icon>
-            </v-btn>
-
-            <v-btn icon>
-              <v-icon>mdi-share-variant</v-icon>
-            </v-btn>
-          </v-card-actions>
+          <v-spacer></v-spacer>
+          <v-card-title v-text="card.title"></v-card-title>
         </v-card>
       </v-col>
     </v-row>
   </v-container>
-  <!-- </v-card> -->
 </template>
 
 <script>
@@ -52,12 +45,17 @@ export default {
         flex: 12,
       },
       {
-        title: "Favorite road trips",
+        title: "Favorite road",
         src: "https://cdn.vuetifyjs.com/images/cards/road.jpg",
         flex: 6,
       },
       {
         title: "Best airlines",
+        src: "https://cdn.vuetifyjs.com/images/cards/plane.jpg",
+        flex: 6,
+      },
+      {
+        title: "Best airline",
         src: "https://cdn.vuetifyjs.com/images/cards/plane.jpg",
         flex: 6,
       },
