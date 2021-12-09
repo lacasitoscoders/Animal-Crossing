@@ -2,6 +2,7 @@
   <v-app>
     <nav-bar />
     <v-main>
+      <card-section />
       <router-view />
     </v-main>
     <bottom-bar />
@@ -11,6 +12,7 @@
 <script>
 import NavBar from "./components/NavBar.vue";
 import BottomBar from "./components/BottomBar.vue";
+import CardSection from "./components/CardSection.vue";
 
 export default {
   name: "App",
@@ -21,6 +23,7 @@ export default {
   components: {
     NavBar,
     BottomBar,
+    CardSection,
   },
 };
 </script>
