@@ -5,16 +5,7 @@
       <v-spacer></v-spacer>
       <v-img class="header-img" src="../assets/acnh-logo.png"></v-img>
     </v-app-bar>
-    <v-navigation-drawer
-      v-model="drawer"
-      absolute
-      bottom
-      temporary
-      v-for="n in 3"
-      :key="n"
-      :class="n === 3 && 'mt-auto'"
-      tile
-    >
+    <v-navigation-drawer v-model="drawer" absolute bottom temporary>
       <div
         class="drawer-container d-flex flex-column flex-end"
         style="height: 100%"
@@ -59,6 +50,10 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+.row {
+  flex-wrap: inherit;
+}
+
 .mdi-menu::before {
   font-size: 2.5rem;
 }
