@@ -2,8 +2,8 @@
   <v-container fluid>
     <v-row>
       <v-col
-        v-for="card in cards"
-        :key="card.title"
+        v-for="data in animalList"
+        :key="data.name"
         cols="6"
         sm="5"
         md="3"
@@ -11,7 +11,7 @@
       >
         <v-card min-height="130px">
           <v-img
-            :src="card.src"
+            :src="data.image_uri"
             class="white--text align-end"
             gradient="to bottom, rgba(0,0,0,.1), rgba(0,0,0,.5)"
             height="130px"
@@ -24,7 +24,7 @@
             </v-card-actions>
           </v-img>
           <v-spacer></v-spacer>
-          <v-card-title v-text="card.title"></v-card-title>
+          <v-card-title>{{ data.name }}</v-card-title>
         </v-card>
       </v-col>
     </v-row>
@@ -37,29 +37,6 @@ export default {
   props: {
     animalList: Object,
   },
-  data: () => ({
-    cards: [
-      {
-        title: "Pre-fab homes",
-        src: "https://cdn.vuetifyjs.com/images/cards/house.jpg",
-        flex: 12,
-      },
-      {
-        title: "Favorite road",
-        src: "https://cdn.vuetifyjs.com/images/cards/road.jpg",
-        flex: 6,
-      },
-      {
-        title: "Best airlines",
-        src: "https://cdn.vuetifyjs.com/images/cards/plane.jpg",
-        flex: 6,
-      },
-      {
-        title: "Best airline",
-        src: "https://cdn.vuetifyjs.com/images/cards/plane.jpg",
-        flex: 6,
-      },
-    ],
-  }),
+  data: () => ({}),
 };
 </script>
