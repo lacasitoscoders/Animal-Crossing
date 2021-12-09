@@ -62,17 +62,14 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-// .v-card__actions i {
-//   color: #ffffff;
-// }
 i.v-icon.notranslate.mdi.mdi-heart.theme--light {
-  color: white;
+  color: #ffffff;
 }
-.v-card.v-sheet.theme--light {
-  max-width: 256px;
-}
+// .v-card.v-sheet.theme--light {
+//   max-width: 256px;
+// }
 
-.v-image.v-responsive.white--text.align-end.theme--light {
-  height: 256px !important;
-}
+// .v-image.v-responsive.white--text.align-end.theme--light {
+//   height: 256px !important;
+// }
 </style>
