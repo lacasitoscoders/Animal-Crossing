@@ -3,7 +3,7 @@
     <v-row>
       <v-col
         v-for="data in animalList"
-        :key="data.name"
+        :key="data.id"
         cols="6"
         sm="5"
         md="3"
@@ -35,7 +35,7 @@
 export default {
   name: "CardSection",
   props: {
-    animalList: Object,
+    animalList: Array,
   },
   data: () => ({}),
 };

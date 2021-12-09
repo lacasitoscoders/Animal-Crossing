@@ -6,7 +6,7 @@ export default class ApiRepository {
   async getAllData() {
     const response = await fetch(this.url);
     const data = await response.json();
-    // console.log(data.ant00.name["name-EUes"]);
+    // console.log(data.ant00.["name-EUes"]);
     return data;
   }
 }
