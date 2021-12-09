@@ -24,7 +24,7 @@
             </v-card-actions>
           </v-img>
           <v-spacer></v-spacer>
-          <v-card-title>{{ data.name }}</v-card-title>
+          <v-card-title>{{ data.name["name-EUes"] }}</v-card-title>
         </v-card>
       </v-col>
     </v-row>
