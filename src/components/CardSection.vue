@@ -5,9 +5,10 @@
         v-for="card in cards"
         :key="card.title"
         cols="6"
-        sm="5"
-        md="3"
-        lg="2"
+        sm="6"
+        md="4"
+        lg="3"
+        class="d-flex flex-column align-center"
       >
         <v-card min-height="130px">
           <v-img
@@ -17,7 +18,7 @@
             height="130px"
             position="top center"
           >
-            <v-card-actions>
+            <v-card-actions class="d-flex justify-end">
               <v-btn icon>
                 <v-icon>mdi-heart</v-icon>
               </v-btn>
@@ -42,24 +43,36 @@ export default {
       {
         title: "Pre-fab homes",
         src: "https://cdn.vuetifyjs.com/images/cards/house.jpg",
-        flex: 12,
       },
       {
         title: "Favorite road",
         src: "https://cdn.vuetifyjs.com/images/cards/road.jpg",
-        flex: 6,
       },
       {
         title: "Best airlines",
         src: "https://cdn.vuetifyjs.com/images/cards/plane.jpg",
-        flex: 6,
       },
       {
         title: "Best airline",
         src: "https://cdn.vuetifyjs.com/images/cards/plane.jpg",
-        flex: 6,
       },
     ],
   }),
 };
 </script>
+
+<style lang="scss" scoped>
+// .v-card__actions i {
+//   color: #ffffff;
+// }
+i.v-icon.notranslate.mdi.mdi-heart.theme--light {
+  color: white;
+}
+.v-card.v-sheet.theme--light {
+  max-width: 256px;
+}
+
+.v-image.v-responsive.white--text.align-end.theme--light {
+  height: 256px !important;
+}
+</style>

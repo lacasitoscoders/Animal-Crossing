@@ -30,5 +30,6 @@ export default {
 
 .application {
   font-family: "Bree Serif";
+  font-size: 16px;
 }
 </style>
