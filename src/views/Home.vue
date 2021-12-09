@@ -22,13 +22,6 @@ export default {
       }
       console.log(this.animalList);
     },
-    getArt(data, name) {
-      for (let index = 0; index < 4; index++) {
-        let art = name + `${index}`;
-        this.animalList.push(data[art]);
-      }
-      console.log(this.animalList);
-    },
   },
   created: async function () {
     const url = "https://acnhapi.com/v1/villagers/";
