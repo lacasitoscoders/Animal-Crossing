@@ -5,9 +5,10 @@
         v-for="data in animalList"
         :key="data.id"
         cols="6"
-        sm="5"
-        md="3"
-        lg="2"
+        sm="6"
+        md="4"
+        lg="3"
+        class="d-flex flex-column align-center"
       >
         <v-card min-height="130px">
           <v-img
@@ -17,7 +18,7 @@
             height="130px"
             position="top center"
           >
-            <v-card-actions>
+            <v-card-actions class="d-flex justify-end">
               <v-btn icon>
                 <v-icon>mdi-heart</v-icon>
               </v-btn>
@@ -40,3 +41,16 @@ export default {
   data: () => ({}),
 };
 </script>
+
+<style lang="scss" scoped>
+i.v-icon.notranslate.mdi.mdi-heart.theme--light {
+  color: #ffffff;
+}
+// .v-card.v-sheet.theme--light {
+//   max-width: 256px;
+// }
+
+// .v-image.v-responsive.white--text.align-end.theme--light {
+//   height: 256px !important;
+// }
+</style>

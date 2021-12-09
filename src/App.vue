@@ -29,9 +29,11 @@ export default {
 </script>
 
 <style lang="scss">
-@import url("https://fonts.googleapis.com/css?family=Questrial");
+@import url("https://fonts.googleapis.com/css2?family=Bree+Serif&display=swap");
 
-.application {
-  font-family: "Bree Serif";
+.application,
+.v-application {
+  font-family: "Bree Serif", serif;
+  font-size: 16px;
 }
 </style>
